@@ -1,0 +1,31 @@
+{
+  "Problem": {
+    "Type": "Driven"
+  },
+  "Model": {
+    "Mesh": "antenna.msh"
+  },
+  "Domains": {
+    "Air": {
+      "Material": "Vacuum"
+    }
+  },
+  "Boundaries": {
+    "PostProcessing": {
+      "NSample": 128
+    },
+    "FarField": true
+  },
+  "Solver": {
+    "Sweep": {
+      "Type": "Uniform",
+      "Start": 1.0,
+      "Stop": 2.0
+    },
+    "Excitations": [
+      {
+        "Port": 1
+      }
+    ]
+  }
+}

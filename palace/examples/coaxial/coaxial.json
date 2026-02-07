@@ -1,0 +1,30 @@
+{
+  "Problem": {
+    "Type": "Driven"
+  },
+  "Model": {
+    "Mesh": "coaxial.msh"
+  },
+  "Domains": {
+    "Inner": {
+      "Material": "Copper"
+    }
+  },
+  "Boundaries": {
+    "Ports": {
+      "Input": 1
+    }
+  },
+  "Solver": {
+    "Sweep": {
+      "Type": "Uniform",
+      "Start": 1.0,
+      "Stop": 3.0
+    },
+    "Excitations": [
+      {
+        "Port": 1
+      }
+    ]
+  }
+}

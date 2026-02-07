@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "Boundaries": {
+      "properties": {
+        "FarField": {
+          "type": "boolean"
+        },
+        "Ports": {
+          "properties": {
+            "Input": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "PostProcessing": {
+          "properties": {
+            "NSample": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "NSample"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "Domains": {
+      "properties": {
+        "Air": {
+          "properties": {
+            "Material": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "Inner": {
+          "properties": {
+            "Material": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "Substrate": {
+          "properties": {
+            "Material": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "Model": {
+      "properties": {
+        "Mesh": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Problem": {
+      "properties": {
+        "Type": {
+          "enum": [
+            "Driven",
+            "Transient"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "Solver": {
+      "properties": {
+        "Excitations": {
+          "items": {
+            "properties": {
+              "Port": {
+                "type": "number"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "Sweep": {
+          "properties": {
+            "Start": {
+              "type": "number"
+            },
+            "Stop": {
+              "type": "number"
+            },
+            "Type": {
+              "enum": [
+                "Adaptive",
+                "Uniform"
+              ],
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "Boundaries",
+    "Domains",
+    "Model",
+    "Problem",
+    "Solver"
+  ],
+  "title": "Palace Examples Schema",
+  "type": "object"
+}
