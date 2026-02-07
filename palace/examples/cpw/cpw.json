@@ -1,0 +1,33 @@
+{
+  "Problem": {
+    "Type": "Transient"
+  },
+  "Model": {
+    "Mesh": "cpw.msh"
+  },
+  "Domains": {
+    "Substrate": {
+      "Material": "SiO2"
+    }
+  },
+  "Boundaries": {
+    "Ports": {
+      "Input": 1
+    }
+  },
+  "Solver": {
+    "Sweep": {
+      "Type": "Adaptive",
+      "Start": 0.5,
+      "Stop": 5.0
+    },
+    "Excitations": [
+      {
+        "Port": 1
+      },
+      {
+        "Port": 2
+      }
+    ]
+  }
+}

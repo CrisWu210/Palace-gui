@@ -1,0 +1,140 @@
+# Schema Report
+
+## Key Paths
+
+- ``
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Boundaries`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Boundaries.FarField`
+  - Types: boolean
+  - Files:
+    - palace/examples/antenna/antenna.json
+- `Boundaries.Ports`
+  - Types: object
+  - Files:
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Boundaries.Ports.Input`
+  - Types: number
+  - Files:
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Boundaries.PostProcessing`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+- `Boundaries.PostProcessing.NSample`
+  - Types: number
+  - Files:
+    - palace/examples/antenna/antenna.json
+- `Domains`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Domains.Air`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+- `Domains.Air.Material`
+  - Types: string
+  - Files:
+    - palace/examples/antenna/antenna.json
+- `Domains.Inner`
+  - Types: object
+  - Files:
+    - palace/examples/coaxial/coaxial.json
+- `Domains.Inner.Material`
+  - Types: string
+  - Files:
+    - palace/examples/coaxial/coaxial.json
+- `Domains.Substrate`
+  - Types: object
+  - Files:
+    - palace/examples/cpw/cpw.json
+- `Domains.Substrate.Material`
+  - Types: string
+  - Files:
+    - palace/examples/cpw/cpw.json
+- `Model`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Model.Mesh`
+  - Types: string
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Problem`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Problem.Type`
+  - Types: string
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Excitations`
+  - Types: array
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Excitations[]`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Excitations[].Port`
+  - Types: number
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Sweep`
+  - Types: object
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Sweep.Start`
+  - Types: number
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Sweep.Stop`
+  - Types: number
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
+- `Solver.Sweep.Type`
+  - Types: string
+  - Files:
+    - palace/examples/antenna/antenna.json
+    - palace/examples/coaxial/coaxial.json
+    - palace/examples/cpw/cpw.json
